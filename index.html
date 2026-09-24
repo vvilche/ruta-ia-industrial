@@ -62,6 +62,17 @@
   .howto b{color:var(--brand)}
   .src{color:var(--muted); font-size:11px; margin-top:30px; border-top:1px solid var(--line); padding-top:14px}
   .badge{display:inline-block; font-size:10px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--violet); background:var(--violet-soft); border-radius:6px; padding:1px 7px; margin-left:6px; vertical-align:middle}
+  .checklist{background:#fff; border:1px solid var(--line); border-radius:12px; padding:8px 20px; margin-top:14px}
+  .step{display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); align-items:flex-start}
+  .step:last-child{border-bottom:none}
+  .step .box{flex:none; width:19px; height:19px; border:2px solid var(--brand); border-radius:5px; margin-top:2px; background:#fff}
+  .step .txt{font-size:13.5px; flex:1}
+  .step .txt b{display:block; font-size:13.5px}
+  .step .txt .sub{color:var(--muted); font-size:12.5px; margin-top:3px; display:block}
+  .step .txt .sub b{display:inline; color:var(--ink)}
+  a.mini{color:var(--blue); text-decoration:none; font-weight:600; word-break:break-all}
+  a.mini:hover{text-decoration:underline}
+  .stephead{font-size:11px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:var(--muted); margin:14px 0 4px}
 </style>
 </head>
 <body>
@@ -80,6 +91,7 @@
     <a href="#ruta">Ruta alternativa</a>
     <a href="#para-que">Para qué lo usamos</a>
     <a href="#orden">Cómo armarla</a>
+    <a href="#checklist">Checklist</a>
   </div>
 </nav>
 
@@ -264,6 +276,33 @@
       se estudia gratis con Fundamentals + Kaggle/Coursera. Los self-paced de NVIDIA sí emiten certificado DLI. Los links
       "Abrir catálogo" llevan al listado completo (learn.nvidia.com/courses y nvidia.com/en-us/training/self-paced-courses)
       donde están los cursos de Omniverse/Isaac y el Learning Path de GenAI/LLM.
+    </div>
+  </section>
+
+  <section id="checklist">
+    <h2>Checklist de ejecución</h2>
+    <p class="lead">Sigue esto en orden y no pagas nada (salvo que quieras el instructor-led del Paso 4).</p>
+    <div class="checklist">
+      <div class="stephead">Paso 0 · Cuentas</div>
+      <div class="step"><div class="box"></div><div class="txt"><b>Cuenta Developer Program</b><span class="sub">Ya la tienes.</span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>Cuenta de cursos</b><span class="sub">Distinta del Developer Program. Crearla en <a class="mini" target="_blank" href="https://courses.nvidia.com/join">courses.nvidia.com/join</a>. Sin esta no puedes inscribirte a ningún curso.</span></div></div>
+
+      <div class="stephead">Paso 1 · Reclamar el cupón gratis (solo uno)</div>
+      <div class="step"><div class="box"></div><div class="txt"><b>Reclamar "Generative AI with Diffusion Models"</b><span class="sub">En <a class="mini" target="_blank" href="https://developer.nvidia.com/join-nvidia-developer-program">developer.nvidia.com/join-nvidia-developer-program</a> → botón "Claim Now". Es el único de pago de la lista (~$90); el resto ya es gratis.</span></div></div>
+
+      <div class="stephead">Paso 2 · Inscribirse en orden (self-paced, gratis)</div>
+      <div class="step"><div class="box"></div><div class="txt"><b>1 · Getting Started with Deep Learning</b><span class="sub"><a class="mini" target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1%3ADLI%2BS-FX-01%2BV1">learn.nvidia.com/...S-FX-01+V1</a></span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>2 · Fundamentals of Deep Learning</b><span class="sub"><a class="mini" target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1%3ADLI%2BC-FX-01%2BV3">learn.nvidia.com/...C-FX-01+V3</a></span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>3 · Generative AI Explained (2h, sin código)</b><span class="sub"><a class="mini" target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1%3ADLI%2BS-FX-07%2BV1">learn.nvidia.com/...S-FX-07+V1</a></span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>4 · Augmenting LLMs using RAG (1h)</b><span class="sub"><a class="mini" target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1%3ADLI%2BS-FX-16%2BV1">learn.nvidia.com/...S-FX-16+V1</a></span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>5 · Building RAG Agents for LLMs (8h)</b><span class="sub"><a class="mini" target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1%3ADLI%2BC-FX-15%2BV1">learn.nvidia.com/...C-FX-15+V1</a></span></div></div>
+      <div class="step"><div class="box"></div><div class="txt"><b>6 · Generative AI with Diffusion Models</b><span class="sub">Con el cupón del Paso 1.</span></div></div>
+
+      <div class="stephead">Paso 3 · Bonus docente (gratis)</div>
+      <div class="step"><div class="box"></div><div class="txt"><b>Aplicar al NVIDIA Higher Education / Educator Program</b><span class="sub">Teaching Kits + acceso gratis para ti y tus alumnos (perfil FAE/USACH).</span></div></div>
+
+      <div class="stephead">Paso 4 · Solo si se justifica</div>
+      <div class="step"><div class="box"></div><div class="txt"><b>Predictive Maintenance o Anomaly Detection</b><span class="sub">Instructor-led, ~$500 c/u. Recién tras terminar los 6 self-paced.</span></div></div>
     </div>
   </section>
 
