@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruta de estudio en IA industrial — sin depender del evento</title>
+<meta name="description" content="Ruta alternativa autodirigida para estudiar IA física, agéntica y generativa con cursos NVIDIA DLI (varios gratis) y recursos abiertos — el mismo temario del AI Week LATAM 2026, por tu cuenta.">
+<meta property="og:title" content="Ruta de estudio en IA industrial — sin depender del evento">
+<meta property="og:description" content="Ruta alternativa autodirigida: cursos NVIDIA DLI + recursos abiertos para IA física, agéntica y generativa.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --ink:#16212c; --muted:#5f7080; --line:#e3e9ef; --bg:#f6f8fa;
+    --brand:#0e7a5f; --brand-soft:#e3f2ec; --navy:#0d1b2a;
+    --blue:#2563eb; --blue-soft:#e8effd; --amber:#b45309; --amber-soft:#fdf3e3;
+    --violet:#6d28d9; --violet-soft:#f1e9fd; --red:#b42318; --red-soft:#fdecea;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink); margin:0; background:var(--bg); line-height:1.6}
+  header{background:var(--navy); color:#fff; padding:34px 20px 28px}
+  header .inner{max-width:1060px; margin:0 auto}
+  .kicker{display:inline-block; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#7dd3c8; font-weight:700; margin-bottom:8px}
+  header h1{font-size:24px; margin:0 0 8px; font-weight:800; letter-spacing:-.3px}
+  header .sub{color:#aebfd0; font-size:13.5px; max-width:820px}
+  nav{background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10}
+  nav .inner{max-width:1060px; margin:0 auto; display:flex; gap:4px; overflow-x:auto; padding:8px 16px}
+  nav a{color:var(--muted); text-decoration:none; font-size:13px; padding:7px 12px; border-radius:8px; white-space:nowrap}
+  nav a:hover{background:var(--brand-soft); color:var(--brand)}
+  .wrap{max-width:1060px; margin:0 auto; padding:30px 16px 80px}
+  section{margin-top:44px}
+  h2{font-size:16px; text-transform:uppercase; letter-spacing:.6px; color:var(--brand); margin:0 0 8px; border-left:4px solid var(--brand); padding-left:12px}
+  .lead{color:var(--muted); font-size:13px; margin:0 0 16px}
+  table{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; font-size:13px}
+  th{background:#f0f4f7; text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--line)}
+  td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  tbody tr:last-child td{border-bottom:none}
+  tr:hover td{background:#fafcfd}
+  td.rz{font-weight:600}
+  .pill{display:inline-block; font-size:10.5px; padding:2px 9px; border-radius:20px; font-weight:700; white-space:nowrap}
+  .pill.free{background:var(--brand-soft); color:var(--brand)}
+  .pill.paid{background:var(--amber-soft); color:var(--amber)}
+  .pill.cert{background:var(--blue-soft); color:var(--blue)}
+  .pill.nocert{background:#eef2f6; color:var(--muted)}
+  a.ext{color:var(--blue); text-decoration:none; font-weight:600; word-break:break-all}
+  a.ext:hover{text-decoration:underline}
+  .cat{font-size:12px; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:.5px; margin:26px 0 8px}
+  .grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px}
+  .card{border:1px solid var(--line); background:#fff; border-radius:12px; padding:16px 18px}
+  .card h3{margin:0 0 8px; font-size:14px}
+  .card p{margin:0; font-size:13px; color:var(--muted)}
+  .card ul{margin:8px 0 0; padding-left:18px}
+  .card li{margin:4px 0; font-size:13px; color:var(--muted)}
+  .note{background:var(--amber-soft); border:1px solid #f0d9b0; border-radius:12px; padding:15px 18px; font-size:13px; color:#7a4a0f; margin-top:18px}
+  .note b{display:block; margin-bottom:4px; color:#5d390c}
+  .howto{background:var(--brand-soft); border-radius:12px; padding:16px 18px; margin:14px 0; font-size:13px}
+  .howto b{color:var(--brand)}
+  .src{color:var(--muted); font-size:11px; margin-top:30px; border-top:1px solid var(--line); padding-top:14px}
+  .badge{display:inline-block; font-size:10px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; color:var(--violet); background:var(--violet-soft); border-radius:6px; padding:1px 7px; margin-left:6px; vertical-align:middle}
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <div class="kicker">Ruta alternativa autodirigida</div>
+    <h1>Estudiar IA industrial sin depender del evento</h1>
+    <div class="sub">El mismo temario del AI Week LATAM 2026 (IA Física, Agéntica y Generativa + talleres NVIDIA DLI),
+    resuelto con cursos oficiales de NVIDIA (varios gratis) y recursos abiertos — a tu ritmo, desde tu computador.</div>
+  </div>
+</header>
+
+<nav>
+  <div class="inner">
+    <a href="#clave">La clave</a>
+    <a href="#ruta">Ruta alternativa</a>
+    <a href="#para-que">Para qué lo usamos</a>
+    <a href="#orden">Cómo armarla</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section id="clave">
+    <h2>La clave</h2>
+    <div class="howto">
+      <b>El contenido del evento ya existe por tu cuenta.</b>
+      Los 4 talleres "exclusivos" del AI Week son cursos del NVIDIA Deep Learning Institute (DLI), y casi todos tienen
+      versión <b>self-paced</b> — la mayoría <b>gratis</b>, en learn.nvidia.com, con certificado incluido. El evento solo
+      añade instructor en vivo, GPU en la nube durante el taller y networking. Para aprender el temario, no lo necesitas.
+      Bonus: NVIDIA publica un <b>Generative AI &amp; LLM Learning Path</b> oficial que ordena exactamente esta ruta.
+    </div>
+  </section>
+
+  <section id="ruta">
+    <h2>Ruta alternativa — curso por curso</h2>
+    <p class="lead">Orden de estudio recomendado. "Gratis" = sin costo; "Certificado" = credencial emitida al completar.</p>
+
+    <div class="cat">1 · Fundamentos de Deep Learning</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Getting Started with Deep Learning</td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Fundamentals of Deep Learning <span class="badge">igual al taller 29 sep</span></td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Practical Deep Learning for Coders</td>
+          <td><a class="ext" href="https://course.fast.ai">course.fast.ai</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill nocert">No (auto)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cat">2 · LLMs y desarrollo rápido de aplicaciones</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Generative AI Explained (sin código)</td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span> · 2h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Augmenting LLMs using Retrieval Augmented Generation</td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span> · 1h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Building RAG Agents for LLMs</td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span> · 8h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Rapid Application Development using LLMs <span class="badge">igual al taller 30 sep</span></td>
+          <td>NVIDIA DLI (learning path)</td>
+          <td><span class="pill paid">$90</span></td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">LangChain / RAG short courses</td>
+          <td><a class="ext" href="https://www.deeplearning.ai/short-courses/">deeplearning.ai/short-courses</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill cert">Constancia</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cat">3 · Modelos de difusión</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Generative AI with Diffusion Models <span class="badge">igual al taller 30 sep</span></td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis*</span> · 8h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Diffusion Models Course</td>
+          <td><a class="ext" href="https://huggingface.co/learn/diffusion-course">huggingface.co/learn</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill nocert">No</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cat">4 · Detección de anomalías y mantenimiento predictivo</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Applications of AI for Anomaly Detection <span class="badge">igual al taller 1 oct</span></td>
+          <td>NVIDIA DLI (instructor-led, NVDLAD)</td>
+          <td><span class="pill paid">$500</span> · 8h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Applications of AI for Predictive Maintenance <span class="badge">más pegado a PRIDE</span></td>
+          <td>NVIDIA DLI (instructor-led, NVDLPM)</td>
+          <td><span class="pill paid">$500</span> · 8h</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Anomaly detection en series temporales (autoencoders/LSTM)</td>
+          <td>Kaggle Learn · Coursera · fast.ai</td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill nocert">No</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cat">5 · IA Agéntica</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Building Effective Agents (lectura canónica)</td>
+          <td><a class="ext" href="https://www.anthropic.com/engineering/building-effective-agents">anthropic.com/engineering</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill nocert">No</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Claude Code docs + prácticas de prompting agéntico</td>
+          <td><a class="ext" href="https://docs.anthropic.com/en/docs/claude-code/overview">docs.anthropic.com</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill nocert">No</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Multi AI Agent Systems (CrewAI / LangGraph)</td>
+          <td><a class="ext" href="https://www.deeplearning.ai/short-courses/">deeplearning.ai/short-courses</a></td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill cert">Constancia</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cat">6 · IA Física y gemelos digitales</div>
+    <table>
+      <thead><tr><th>Curso</th><th>Plataforma</th><th>Costo</th><th>Certificado</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rz">Essentials of Developing Omniverse Kit Applications</td>
+          <td>NVIDIA DLI · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span> · 90 min</td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Introducción a Isaac / Omniverse (physical AI)</td>
+          <td>NVIDIA Developer · learn.nvidia.com</td>
+          <td><span class="pill free">Gratis</span></td>
+          <td><span class="pill cert">Sí</span></td>
+        </tr>
+        <tr>
+          <td class="rz">Integración OT (IEC 61850, Modbus, OPC UA) — dominio propio</td>
+          <td>Skill interna <i>industrial-aiops</i> + documentación</td>
+          <td><span class="pill free">Interna</span></td>
+          <td><span class="pill nocert">No</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <b>Notas de costo y certificado</b>
+      * "Generative AI with Diffusion Models" (8h, ~$90) se obtiene GRATIS al unirte al <b>NVIDIA Developer Program</b>
+      (developer.nvidia.com/join) — regala 1 curso self-paced de hasta $90. El de <b>Anomaly Detection</b> y <b>Predictive
+      Maintenance</b> no tienen versión self-paced barata (son instructor-led de $500, el evento los regala); el contenido
+      equivalente se estudia gratis con Fundamentals + Kaggle/Coursera. Los self-paced de NVIDIA sí emiten certificado DLI.
+      Precios y disponibilidad pueden variar por región.
+    </div>
+  </section>
+
+  <section id="para-que">
+    <h2>Para qué lo usamos</h2>
+    <p class="lead">No es un curso más: cada bloque de la ruta alimenta algo concreto de tu operación.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>1 · Doctorado (Innovación e Industria, FING USACH)</h3>
+        <p>Tu tesis gira sobre el gemelo digital y los datos industriales "listos para IA". Esta ruta te da el marco técnico
+        formal (physical AI, digital twins, detección de anomalías) y la bibliografía/estado del arte de NVIDIA para el capítulo
+        de IA aplicada. El capstone del Módulo 7 puede ser evidencia empírica para la tesis.</p>
+      </div>
+      <div class="card">
+        <h3>2 · Docencia (FAE / USACH / Academia CONECTA)</h3>
+        <p>Material listo para un curso de "IA aplicada a la ingeniería eléctrica". Los ejercicios hands-on de NVIDIA DLI (con
+        GPU en nube) se reusan en clases. Además NVIDIA tiene <b>Educator Programs y Teaching Kits</b>: como docente puedes
+        obtener acceso gratis para ti y tus alumnos — credencial docente + contenido oficial.</p>
+      </div>
+      <div class="card">
+        <h3>3 · Producto CONECTA (lo más rentable)</h3>
+        <ul>
+          <li><b>Anomalías + mantenimiento predictivo</b> → PRIDE (relés, transformadores, vibración).</li>
+          <li><b>Modelos de difusión</b> → generación de datos sintéticos de fallas (resuelve el desbalance extremo: casi no hay fallas reales para entrenar).</li>
+          <li><b>Gemelos digitales</b> → Bombin (gemelo del SEN).</li>
+          <li><b>RAG + agentes</b> → NormativaCEN, asistentes de documentación técnica, cotizador.</li>
+        </ul>
+        <p>Es la validación técnica de tu tesis comercial: "se vende la capa de datos de TODA la faena, en tiempo real, lista para IA".</p>
+      </div>
+      <div class="card">
+        <h3>4 · Credibilidad comercial</h3>
+        <p>Certificados NVIDIA DLI = evidencia objetiva de competencia en IA para clientes industriales y mineros. El respaldo
+        NVIDIA le quita la fricción a la pregunta "¿y tú qué sabes de IA?" en una venta B2B eléctrica/minera. Va directo al
+        CV, LinkedIn y las propuestas.</p>
+      </div>
+      <div class="card">
+        <h3>5 · Equipo CONECTA (upskilling)</h3>
+        <p>La ruta es el plan de capacitación para tu equipo: del piso de Deep Learning hasta RAG y agentes en producción. Un
+        equipo que domina este stack es la diferencia entre "vender SCADA" y "vender la capa de datos lista para IA".</p>
+      </div>
+      <div class="card">
+        <h3>6 · Posicionamiento de "agente industrial"</h3>
+        <p>Combina con tus skills de monetización y posicionamiento: la ruta te da el respaldo técnico formal para presentarte
+        como el experto en IA industrial de Chile (charlas, cursos, consultoría). El estudio se convierte en activo de marca.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="orden">
+    <h2>Cómo armarla (orden práctico)</h2>
+    <div class="howto">
+      <b>Semana 1–2:</b> Getting Started with Deep Learning + Fundamentals (NVIDIA, gratis) → piso de PyTorch y CNN.<br>
+      <b>Semana 3:</b> Generative AI Explained + Augmenting LLMs with RAG (gratis) → intuición de GenAI y RAG.<br>
+      <b>Semana 4:</b> Building RAG Agents for LLMs (8h, gratis) → tu primer agente RAG sobre normativa propia.<br>
+      <b>Semana 5:</b> Unirte al NVIDIA Developer Program → canjear el curso gratis por <b>Generative AI with Diffusion Models</b>.<br>
+      <b>Semana 6:</b> Anomaly detection (Kaggle/Coursera, gratis) aplicado a series OT + lectura "Building Effective Agents".<br>
+      <b>Después:</b> decidir si vale la pena el instructor-led de $500 (Predictive Maintenance) o si el self-paced basta.<br><br>
+      <b>Atajo:</b> el <a class="ext" href="https://www.nvidia.com/en-us/learn/learning-path/generative-ai-llm/">Generative AI &amp; LLM Learning Path</a>
+      oficial de NVIDIA ya ordena los cursos 1→4 por ti, con precios y certificados.
+    </div>
+  </section>
+
+  <p class="src">Fuentes verificadas 23/09/2026: learn.nvidia.com (catálogo NVIDIA DLI), nvidia.com/en-us/training/self-paced-courses,
+  catálogo oficial NVIDIA Training (PDF), developer.nvidia.com/join (Developer Program). Precios, gratuidad y disponibilidad de
+  certificados pueden cambiar por región y edición — confirmar al inscribirse en cada curso. Los enlaces de terceros
+  (fast.ai, Hugging Face, DeepLearning.AI, Anthropic) son recursos abiertos complementarios.</p>
+</div>
+</body>
+</html>
